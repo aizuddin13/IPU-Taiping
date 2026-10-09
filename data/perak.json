@@ -1,5 +1,5 @@
 {
- "dikemaskini": "2026-10-09T14:00:00+08:00",
+ "dikemaskini": "2026-10-09T15:00:00+08:00",
  "sumber": "APIMS, Jabatan Alam Sekitar",
  "stesen": [
   {
@@ -12,7 +12,7 @@
   {
    "nama": "Pegoh Ipoh",
    "id": "CA12A",
-   "ipu": 175,
+   "ipu": 176,
    "kategori": "Tidak Sihat",
    "pencemar": "PM2.5"
   },
@@ -33,7 +33,7 @@
   {
    "nama": "Taiping",
    "id": "CA10A",
-   "ipu": 129,
+   "ipu": 121,
    "kategori": "Tidak Sihat",
    "pencemar": "PM2.5"
   }
