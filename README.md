@@ -17,10 +17,23 @@ Halaman: https://aizuddin13.github.io/IPU-Taiping/
 
 ## Kemas kini
 
-Fail data dalam `data/` ditulis semula setiap jam oleh satu tugas berjadual
-dan ditolak ke repositori ini. GitHub Pages menerbitkan semula halaman itu
-secara automatik selepas setiap commit, jadi biasanya ia lewat satu hingga dua
-minit berbanding portal rasmi.
+Fail data dalam `data/` ditulis semula setiap jam oleh
+`.github/workflows/kemaskini.yml`, yang berjalan pada pelari GitHub dan
+memanggil API APIMS serta data.gov.my terus dengan Python pustaka standard.
+Alur kerja yang sama menerbitkan halaman ini ke GitHub Pages, jadi tiada
+langkah manual dan tiada perkhidmatan luar yang terlibat.
+
+Dua perlindungan terbina:
+
+- **Semakan kesegaran.** Jika bacaan terbaharu yang diterima lebih lama
+  daripada tiga jam, skrip itu berhenti tanpa menulis apa-apa dan larian itu
+  gagal dengan nyata dalam tab Actions. Data beku tidak akan berlalu secara
+  senyap sebagai "tiada bacaan baharu".
+- **Gabungan, bukan tambahan.** Setiap larian menerima tetingkap 25 jam dan
+  mengisi mana-mana jam yang tiada dalam fail. Larian yang terlepas ditampal
+  sendiri oleh larian berikutnya.
+
+Larian boleh dicetuskan secara manual dari tab Actions (Run workflow).
 
 ## Sumber
 
