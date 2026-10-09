@@ -4,7 +4,7 @@ Halaman awam yang memaparkan bacaan Indeks Pencemar Udara (IPU) bagi stesen
 pemantauan **CA10A, Taiping, Perak**, bersama ramalan cuaca MET Malaysia dan
 bandingan dengan stesen-stesen lain di Perak.
 
-Halaman: https://aizuddin13.github.io/ipu-taiping/
+Halaman: https://aizuddin13.github.io/IPU-Taiping/
 
 ## Kandungan
 
