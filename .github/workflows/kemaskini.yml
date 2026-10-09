@@ -2,9 +2,11 @@ name: Kemas kini data IPU Taiping
 
 on:
   schedule:
-    # Setiap jam pada minit ke-10 UTC. Waktu Malaysia ialah UTC+8 penuh,
-    # jadi ini juga minit ke-10 setiap jam waktu tempatan.
-    - cron: "10 * * * *"
+    # Setiap jam pada minit ke-25. Waktu Malaysia ialah UTC+8 penuh, jadi
+    # ini juga minit ke-25 waktu tempatan. APIMS menerbitkan bacaan sesuatu
+    # jam kira-kira 10 hingga 20 minit selepas jam itu, jadi :10 terlalu
+    # awal dan larian akan pulang dengan tangan kosong.
+    - cron: "25 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
