@@ -1,39 +1,39 @@
 {
- "dikemaskini": "2026-10-10T15:00:00+08:00",
+ "dikemaskini": "2026-10-10T16:00:00+08:00",
  "sumber": "APIMS, Jabatan Alam Sekitar",
  "stesen": [
   {
    "nama": "Tasek Ipoh",
    "id": "CA11A",
-   "ipu": 170,
+   "ipu": 169,
    "kategori": "Tidak Sihat",
    "pencemar": "PM2.5"
   },
   {
    "nama": "Pegoh Ipoh",
    "id": "CA12A",
-   "ipu": 167,
+   "ipu": 166,
    "kategori": "Tidak Sihat",
    "pencemar": "PM2.5"
   },
   {
    "nama": "Tanjung Malim",
    "id": "CA14A",
-   "ipu": 166,
+   "ipu": 165,
    "kategori": "Tidak Sihat",
    "pencemar": "PM2.5"
   },
   {
    "nama": "Seri Manjung",
    "id": "CA13A",
-   "ipu": 108,
-   "kategori": "Tidak Sihat",
+   "ipu": 98,
+   "kategori": "Sederhana",
    "pencemar": "PM2.5"
   },
   {
    "nama": "Taiping",
    "id": "CA10A",
-   "ipu": 90,
+   "ipu": 88,
    "kategori": "Sederhana",
    "pencemar": "PM2.5"
   }
