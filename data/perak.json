@@ -1,5 +1,5 @@
 {
- "dikemaskini": "2026-10-10T12:00:00+08:00",
+ "dikemaskini": "2026-10-10T13:00:00+08:00",
  "sumber": "APIMS, Jabatan Alam Sekitar",
  "stesen": [
   {
@@ -19,21 +19,21 @@
   {
    "nama": "Tanjung Malim",
    "id": "CA14A",
-   "ipu": 168,
+   "ipu": 167,
    "kategori": "Tidak Sihat",
    "pencemar": "PM2.5"
   },
   {
    "nama": "Seri Manjung",
    "id": "CA13A",
-   "ipu": 151,
+   "ipu": 147,
    "kategori": "Tidak Sihat",
    "pencemar": "PM2.5"
   },
   {
    "nama": "Taiping",
    "id": "CA10A",
-   "ipu": 94,
+   "ipu": 93,
    "kategori": "Sederhana",
    "pencemar": "PM2.5"
   }
