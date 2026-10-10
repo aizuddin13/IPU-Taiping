@@ -87,6 +87,16 @@ h2{font-size:1rem; font-weight:600; margin:0 0 4px}
 .jad-bar{height:7px; border-radius:4px; background:var(--accent); display:block; min-width:2px}
 .jad-bar.b-ok{background:var(--ok)} .jad-bar.b-warn{background:var(--warn)} .jad-bar.b-bad{background:var(--bad)}
 
+/* Pada telefon, buang lajur sekunder dan rapatkan jarak supaya jadual
+   muat tanpa perlu diskrol melintang. */
+@media (max-width:520px){
+  .jad th,.jad td{padding:7px 6px}
+  #harian-jadual .jad th:nth-child(6),
+  #harian-jadual .jad td:nth-child(6){display:none}
+  .jad .bar-sel{width:28%; min-width:52px}
+  .sek-julat{width:72px}
+}
+
 .chart{position:relative; width:100%}
 .chart svg{display:block; width:100%; height:auto; overflow:visible}
 
