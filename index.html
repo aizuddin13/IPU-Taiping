@@ -57,6 +57,36 @@ h2{font-size:1rem; font-weight:600; margin:0 0 4px}
 .tile-num{font-size:1.75rem; font-weight:600; font-variant-numeric:tabular-nums; line-height:1.2; margin-top:2px}
 .tile-note{color:var(--muted); font-size:.75rem; margin-top:4px}
 
+.sek-kini{display:flex; gap:12px; align-items:flex-start; padding:14px 16px; border-radius:var(--radius);
+  border:1px solid var(--line); border-left:3px solid var(--ok); background:var(--bg); margin-bottom:16px}
+.sek-kini.sek-warn{border-left-color:var(--warn)}
+.sek-kini.sek-bad{border-left-color:var(--bad)}
+.sek-dot{width:9px;height:9px;border-radius:50%;background:var(--ok);flex:0 0 auto;margin-top:7px}
+.sek-kini.sek-warn .sek-dot{background:var(--warn)}
+.sek-kini.sek-bad .sek-dot{background:var(--bad)}
+.sek-tajuk{font-weight:600; color:var(--ok)}
+.sek-kini.sek-warn .sek-tajuk{color:var(--warn)}
+.sek-kini.sek-bad .sek-tajuk{color:var(--bad)}
+.sek-mesej{color:var(--muted); font-size:.875rem; margin-top:3px}
+.sek-senarai{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:1px}
+.sek-senarai li{display:flex; gap:12px; align-items:baseline; padding:9px 12px; border-radius:6px; font-size:.875rem}
+.sek-senarai li.aktif{background:var(--bg); outline:1px solid var(--line)}
+.sek-julat{flex:0 0 auto; width:84px; font-variant-numeric:tabular-nums; color:var(--muted); font-size:.8125rem}
+.sek-senarai li.aktif .sek-julat{color:var(--fg); font-weight:600}
+.sek-arahan{flex:1}
+
+.jad-bungkus{overflow-x:auto}
+.jad-skrol{max-height:21rem; overflow-y:auto}
+.jad{width:100%; border-collapse:collapse; font-size:.8125rem; font-variant-numeric:tabular-nums}
+.jad th{text-align:left; font-weight:600; color:var(--muted); padding:7px 10px;
+  border-bottom:1px solid var(--line); position:sticky; top:0; background:var(--panel); white-space:nowrap}
+.jad td{padding:7px 10px; border-bottom:1px solid var(--line); white-space:nowrap}
+.jad tbody tr:last-child td{border-bottom:0}
+.jad .num{text-align:right}
+.jad .bar-sel{width:40%; min-width:90px}
+.jad-bar{height:7px; border-radius:4px; background:var(--accent); display:block; min-width:2px}
+.jad-bar.b-ok{background:var(--ok)} .jad-bar.b-warn{background:var(--warn)} .jad-bar.b-bad{background:var(--bad)}
+
 .chart{position:relative; width:100%}
 .chart svg{display:block; width:100%; height:auto; overflow:visible}
 
@@ -108,6 +138,20 @@ footer a{color:inherit}
     <div class="kini-meta" id="kini-meta">—</div>
   </section>
 
+  <section class="card" id="sekolah">
+    <h2>Panduan aktiviti sekolah</h2>
+    <p class="note">Mengikut garis panduan Kementerian Pendidikan Malaysia semasa jerebu, berdasarkan bacaan stesen Taiping di atas.</p>
+    <div class="sek-kini" id="sek-kini">
+      <span class="sek-dot" aria-hidden="true"></span>
+      <div>
+        <div class="sek-tajuk" id="sek-tajuk">—</div>
+        <div class="sek-mesej" id="sek-mesej">—</div>
+      </div>
+    </div>
+    <ul class="sek-senarai" id="sek-senarai"></ul>
+    <p class="note" style="margin:16px 0 0">Keputusan menutup atau membuka semula sekolah dibuat oleh KPM, Jabatan Pendidikan Negeri atau Pejabat Pendidikan Daerah — bukan oleh halaman ini. Sekolah dibuka semula apabila IPU turun di bawah 200 dan menunjukkan arah aliran menurun. Rujuk pengumuman rasmi sekolah anda.</p>
+  </section>
+
   <div class="tiles">
     <div class="tile"><div class="tile-label">Purata 24 jam</div><div class="tile-num" id="t-purata">—</div><div class="tile-note">Bacaan sejam, 24 jam terakhir</div></div>
     <div class="tile"><div class="tile-label">Tertinggi 7 hari</div><div class="tile-num" id="t-maks">—</div><div class="tile-note" id="t-maks-bila">—</div></div>
@@ -121,10 +165,43 @@ footer a{color:inherit}
     <div class="chart" id="c-jam"></div>
   </section>
 
+  <section class="card" id="jam24">
+    <h2>Bacaan 24 jam terakhir</h2>
+    <p class="note">Bacaan terbaharu di atas sekali.</p>
+    <div class="jad-bungkus jad-skrol">
+      <table class="jad">
+        <thead>
+          <tr><th scope="col">Masa</th><th scope="col" class="num">IPU</th><th scope="col">Status</th><th scope="col" class="bar-sel">&nbsp;</th></tr>
+        </thead>
+        <tbody id="jad-jam"></tbody>
+      </table>
+    </div>
+  </section>
+
   <section class="card">
     <h2>IPU purata harian</h2>
     <p class="note">Bar ialah purata harian; garis menegak menunjukkan julat terendah hingga tertinggi hari itu.</p>
     <div class="chart" id="c-harian"></div>
+  </section>
+
+  <section class="card" id="harian-jadual">
+    <h2>Ringkasan harian</h2>
+    <p class="note">Bacaan terendah, purata dan tertinggi bagi setiap hari, serta status bacaan tertinggi hari itu.</p>
+    <div class="jad-bungkus">
+      <table class="jad">
+        <thead>
+          <tr>
+            <th scope="col">Tarikh</th>
+            <th scope="col" class="num">Min</th>
+            <th scope="col" class="num">Purata</th>
+            <th scope="col" class="num">Maks</th>
+            <th scope="col">Status tertinggi</th>
+            <th scope="col" class="num">Jam</th>
+          </tr>
+        </thead>
+        <tbody id="jad-harian"></tbody>
+      </table>
+    </div>
   </section>
 
   <section class="card">
@@ -379,8 +456,116 @@ footer a{color:inherit}
         tarikh: hari,
         min: Math.min.apply(null, v),
         maks: Math.max.apply(null, v),
-        purata: Math.round(v.reduce(function (s, x) { return s + x; }, 0) / v.length)
+        purata: Math.round(v.reduce(function (s, x) { return s + x; }, 0) / v.length),
+        bil: v.length
       };
+    });
+  }
+
+  // Garis panduan KPM semasa jerebu, paling ketat dahulu.
+  var TAHAP_SEKOLAH = [
+    {
+      had: 500, aras: "bad", julat: "Melebihi 500",
+      tajuk: "Guru dan staf tidak perlu hadir",
+      arahan: "Guru dan kakitangan tidak perlu hadir ke sekolah.",
+      mesej: "Udara pada paras berbahaya. Semua warga sekolah patut kekal di dalam rumah dan menunggu arahan rasmi."
+    },
+    {
+      had: 200, aras: "bad", julat: "Melebihi 200",
+      tajuk: "Sekolah ditutup",
+      arahan: "Semua sekolah di kawasan terjejas ditutup serta-merta.",
+      mesej: "Sekolah di kawasan terjejas ditutup serta-merta. Sekolah dibuka semula hanya apabila IPU turun di bawah 200 dan menunjukkan arah aliran menurun."
+    },
+    {
+      had: 100, aras: "warn", julat: "101 – 200",
+      tajuk: "Aktiviti luar dihentikan",
+      arahan: "Semua aktiviti di luar bilik darjah yang melibatkan murid dihentikan. Acara sukan dipindahkan ke dalam bangunan atau ditangguhkan.",
+      mesej: "Sekolah terus beroperasi, tetapi semua aktiviti di luar bilik darjah patut dihentikan. Pastikan bekalan air minuman mencukupi dan rujuk murid yang kurang sihat kepada ibu bapa."
+    },
+    {
+      had: -1, aras: "ok", julat: "0 – 100",
+      tajuk: "Aktiviti luar dibenarkan",
+      arahan: "Sekolah beroperasi seperti biasa. Aktiviti luar boleh diteruskan.",
+      mesej: "Sekolah beroperasi seperti biasa dan aktiviti luar boleh diteruskan."
+    }
+  ];
+
+  function tahapSekolah(ipu) {
+    for (var i = 0; i < TAHAP_SEKOLAH.length; i++) {
+      if (ipu > TAHAP_SEKOLAH[i].had) return TAHAP_SEKOLAH[i];
+    }
+    return TAHAP_SEKOLAH[TAHAP_SEKOLAH.length - 1];
+  }
+
+  function lukisSekolah(ipu) {
+    var t = tahapSekolah(ipu);
+    var kotak = document.getElementById("sek-kini");
+    kotak.className = "sek-kini" + (t.aras === "ok" ? "" : " sek-" + t.aras);
+    document.getElementById("sek-tajuk").textContent = t.tajuk;
+    document.getElementById("sek-mesej").textContent = "IPU semasa " + ipu + ". " + t.mesej;
+
+    var senarai = document.getElementById("sek-senarai");
+    senarai.textContent = "";
+    TAHAP_SEKOLAH.slice().reverse().forEach(function (x) {
+      var li = document.createElement("li");
+      if (x === t) li.className = "aktif";
+      var julat = document.createElement("span");
+      julat.className = "sek-julat";
+      julat.textContent = x.julat;
+      var arahan = document.createElement("span");
+      arahan.className = "sek-arahan";
+      arahan.textContent = x.arahan;
+      li.appendChild(julat);
+      li.appendChild(arahan);
+      senarai.appendChild(li);
+    });
+  }
+
+  function warnaBar(ipu) {
+    return ipu <= 50 ? "b-ok" : (ipu <= 100 ? "b-warn" : "b-bad");
+  }
+
+  function sel(teks, kelas) {
+    var td = document.createElement("td");
+    if (kelas) td.className = kelas;
+    td.textContent = teks;
+    return td;
+  }
+
+  function lukisJad24(bacaan) {
+    var badan = document.getElementById("jad-jam");
+    badan.textContent = "";
+    var baris = bacaan.slice(-24).reverse();
+    var paling = baris.reduce(function (a, b) { return Math.max(a, b.ipu); }, 1);
+    baris.forEach(function (r) {
+      var tr = document.createElement("tr");
+      tr.appendChild(sel(hariBulan(r.masa) + ", " + r.masa.slice(11, 16)));
+      tr.appendChild(sel(String(r.ipu), "num"));
+      tr.appendChild(sel(kategori(r.ipu), kelas(kategori(r.ipu))));
+      var td = document.createElement("td");
+      td.className = "bar-sel";
+      var bar = document.createElement("span");
+      bar.className = "jad-bar " + warnaBar(r.ipu);
+      bar.style.width = Math.round(r.ipu / paling * 100) + "%";
+      td.appendChild(bar);
+      tr.appendChild(td);
+      badan.appendChild(tr);
+    });
+  }
+
+  function lukisJadHarian(harian) {
+    var badan = document.getElementById("jad-harian");
+    badan.textContent = "";
+    harian.slice().reverse().forEach(function (h) {
+      var kat = kategori(h.maks);
+      var tr = document.createElement("tr");
+      tr.appendChild(sel(hariBulan(h.tarikh)));
+      tr.appendChild(sel(String(h.min), "num"));
+      tr.appendChild(sel(String(h.purata), "num"));
+      tr.appendChild(sel(String(h.maks), "num"));
+      tr.appendChild(sel(kat, kelas(kat)));
+      tr.appendChild(sel(String(h.bil), "num"));
+      badan.appendChild(tr);
     });
   }
 
@@ -428,6 +613,10 @@ footer a{color:inherit}
     document.getElementById('isi').hidden = false;
 
     var harian = kiraHarian(bacaan);
+    lukisSekolah(r.kini.ipu);
+    lukisJad24(bacaan);
+    lukisJadHarian(harian);
+
     function lukisSemua(){
       cartaJam(document.getElementById('c-jam'), bacaan);
       cartaHarian(document.getElementById('c-harian'), harian);
