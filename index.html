@@ -167,7 +167,7 @@ footer a{color:inherit}
 
   <section class="card" id="jam24">
     <h2>Bacaan 24 jam terakhir</h2>
-    <p class="note">Bacaan terbaharu di atas sekali.</p>
+    <p class="note">Bacaan terbaharu di atas sekali. Bar penuh bersamaan IPU 200, jadi separuh bar bermakna bacaan 100.</p>
     <div class="jad-bungkus jad-skrol">
       <table class="jad">
         <thead>
@@ -536,7 +536,11 @@ footer a{color:inherit}
     var badan = document.getElementById("jad-jam");
     badan.textContent = "";
     var baris = bacaan.slice(-24).reverse();
-    var paling = baris.reduce(function (a, b) { return Math.max(a, b.ipu); }, 1);
+    // Skala tetap: lebar penuh = 200, iaitu hujung band "Tidak Sihat".
+    // Separuh bar bermakna IPU 100, jadi panjangnya membawa makna yang
+    // sama setiap hari dan bukan sekadar perbandingan sesama sendiri.
+    var paling = Math.max(200, Math.ceil(
+      baris.reduce(function (a, b) { return Math.max(a, b.ipu); }, 0) / 50) * 50);
     baris.forEach(function (r) {
       var tr = document.createElement("tr");
       tr.appendChild(sel(hariBulan(r.masa) + ", " + r.masa.slice(11, 16)));
