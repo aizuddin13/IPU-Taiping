@@ -23,7 +23,7 @@ memanggil API APIMS serta data.gov.my terus dengan Python pustaka standard.
 Alur kerja yang sama menerbitkan halaman ini ke GitHub Pages, jadi tiada
 langkah manual dan tiada perkhidmatan luar yang terlibat.
 
-Dua perlindungan terbina:
+Tiga perlindungan terbina:
 
 - **Semakan kesegaran.** Jika bacaan terbaharu yang diterima lebih lama
   daripada tiga jam, skrip itu berhenti tanpa menulis apa-apa dan larian itu
@@ -32,6 +32,14 @@ Dua perlindungan terbina:
 - **Gabungan, bukan tambahan.** Setiap larian menerima tetingkap 25 jam dan
   mengisi mana-mana jam yang tiada dalam fail. Larian yang terlepas ditampal
   sendiri oleh larian berikutnya.
+- **Penampal lompang ke belakang.** Tetingkap 25 jam itu hanya menampal
+  larian yang terlepas kurang daripada sehari. APIMS turut menghidangkan
+  tetingkap lampau, jadi skrip itu berjalan ke belakang — setiap tetingkap
+  berakhir 24 jam selepas lompang terawal — sehingga tujuh hari penuh terisi,
+  paling banyak lapan tetingkap setiap larian. Hujung tetingkap yang pernah
+  diminta dicatat dalam `tetingkap_dicuba`, supaya jam yang memang tiada pada
+  APIMS (stesen tutup, bacaan digugurkan) tidak diminta semula setiap jam
+  selama-lamanya.
 
 Larian boleh dicetuskan secara manual dari tab Actions (Run workflow).
 
