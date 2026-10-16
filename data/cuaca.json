@@ -1,15 +1,15 @@
 {
- "dikemaskini": "2026-10-16T19:51:43+08:00",
+ "dikemaskini": "2026-10-16T21:06:03+08:00",
  "sumber": "MET Malaysia melalui data.gov.my",
  "ramalan": [
   {
    "tarikh": "2026-10-16",
    "hari": "Jumaat",
    "ringkasan": "Ribut petir",
-   "ringkasan_bila": "Pagi dan petang",
+   "ringkasan_bila": "Sepanjang hari",
    "pagi": "Ribut petir",
    "petang": "Ribut petir",
-   "malam": "Tiada hujan",
+   "malam": "Ribut petir",
    "suhu_min": 24,
    "suhu_maks": 34
   },
