@@ -5,7 +5,7 @@
   {
    "nama": "Seri Manjung",
    "id": "CA13A",
-   "ipu": 94,
+   "ipu": 93,
    "kategori": "Sederhana",
    "pencemar": "PM2.5"
   },
@@ -19,7 +19,7 @@
   {
    "nama": "Tasek Ipoh",
    "id": "CA11A",
-   "ipu": 83,
+   "ipu": 79,
    "kategori": "Sederhana",
    "pencemar": "PM2.5"
   },
@@ -33,7 +33,7 @@
   {
    "nama": "Taiping",
    "id": "CA10A",
-   "ipu": 63,
+   "ipu": 62,
    "kategori": "Sederhana",
    "pencemar": "PM2.5"
   }
