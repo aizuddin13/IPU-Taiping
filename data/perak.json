@@ -3,16 +3,16 @@
  "sumber": "APIMS, Jabatan Alam Sekitar",
  "stesen": [
   {
-   "nama": "Pegoh Ipoh",
-   "id": "CA12A",
-   "ipu": 125,
+   "nama": "Tasek Ipoh",
+   "id": "CA11A",
+   "ipu": 136,
    "kategori": "Tidak Sihat",
    "pencemar": "PM2.5"
   },
   {
-   "nama": "Tasek Ipoh",
-   "id": "CA11A",
-   "ipu": 122,
+   "nama": "Pegoh Ipoh",
+   "id": "CA12A",
+   "ipu": 125,
    "kategori": "Tidak Sihat",
    "pencemar": "PM2.5"
   },
