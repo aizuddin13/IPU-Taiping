@@ -1,5 +1,5 @@
 {
- "dikemaskini": "2026-10-20T00:00:00+08:00",
+ "dikemaskini": "2026-10-20T01:00:00+08:00",
  "sumber": "APIMS, Jabatan Alam Sekitar",
  "stesen": [
   {
@@ -19,7 +19,7 @@
   {
    "nama": "Seri Manjung",
    "id": "CA13A",
-   "ipu": 108,
+   "ipu": 109,
    "kategori": "Tidak Sihat",
    "pencemar": "PM2.5"
   },
