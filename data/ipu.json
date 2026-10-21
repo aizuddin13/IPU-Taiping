@@ -2,24 +2,12 @@
  "stesen": "Taiping",
  "id_stesen": "CA10A",
  "negeri": "Perak",
- "dikemaskini": "2026-10-21T07:00:00+08:00",
+ "dikemaskini": "2026-10-21T09:00:00+08:00",
  "sumber": "APIMS, Jabatan Alam Sekitar",
  "tetingkap_dicuba": [
   "2026-10-18T15:00:00"
  ],
  "bacaan": [
-  {
-   "masa": "2026-10-14T08:00:00",
-   "ipu": 59,
-   "kategori": "Sederhana",
-   "pencemar": "PM2.5"
-  },
-  {
-   "masa": "2026-10-14T09:00:00",
-   "ipu": 60,
-   "kategori": "Sederhana",
-   "pencemar": "PM2.5"
-  },
   {
    "masa": "2026-10-14T10:00:00",
    "ipu": 59,
@@ -1012,6 +1000,18 @@
   },
   {
    "masa": "2026-10-21T07:00:00",
+   "ipu": 71,
+   "kategori": "Sederhana",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-10-21T08:00:00",
+   "ipu": 71,
+   "kategori": "Sederhana",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-10-21T09:00:00",
    "ipu": 71,
    "kategori": "Sederhana",
    "pencemar": "PM2.5"
