@@ -3,16 +3,16 @@
  "sumber": "APIMS, Jabatan Alam Sekitar",
  "stesen": [
   {
-   "nama": "Tasek Ipoh",
-   "id": "CA11A",
-   "ipu": 84,
+   "nama": "Seri Manjung",
+   "id": "CA13A",
+   "ipu": 83,
    "kategori": "Sederhana",
    "pencemar": "PM2.5"
   },
   {
-   "nama": "Seri Manjung",
-   "id": "CA13A",
-   "ipu": 83,
+   "nama": "Tasek Ipoh",
+   "id": "CA11A",
+   "ipu": 82,
    "kategori": "Sederhana",
    "pencemar": "PM2.5"
   },
