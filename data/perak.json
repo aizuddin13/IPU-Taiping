@@ -1,5 +1,5 @@
 {
- "dikemaskini": "2026-10-22T22:00:00+08:00",
+ "dikemaskini": "2026-10-22T23:00:00+08:00",
  "sumber": "APIMS, Jabatan Alam Sekitar",
  "stesen": [
   {
@@ -33,7 +33,7 @@
   {
    "nama": "Taiping",
    "id": "CA10A",
-   "ipu": 64,
+   "ipu": 63,
    "kategori": "Sederhana",
    "pencemar": "PM2.5"
   }
