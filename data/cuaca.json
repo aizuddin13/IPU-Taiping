@@ -1,15 +1,15 @@
 {
- "dikemaskini": "2026-10-22T13:51:30+08:00",
+ "dikemaskini": "2026-10-22T15:11:11+08:00",
  "sumber": "MET Malaysia melalui data.gov.my",
  "ramalan": [
   {
    "tarikh": "2026-10-22",
    "hari": "Khamis",
    "ringkasan": "Ribut petir",
-   "ringkasan_bila": "Pagi",
-   "pagi": "Ribut petir",
-   "petang": "Tiada hujan",
-   "malam": "Tiada hujan",
+   "ringkasan_bila": "Petang dan malam",
+   "pagi": "Tiada hujan",
+   "petang": "Ribut petir",
+   "malam": "Hujan",
    "suhu_min": 24,
    "suhu_maks": 34
   },
