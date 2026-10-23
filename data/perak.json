@@ -1,11 +1,11 @@
 {
- "dikemaskini": "2026-10-24T06:00:00+08:00",
+ "dikemaskini": "2026-10-24T07:00:00+08:00",
  "sumber": "APIMS, Jabatan Alam Sekitar",
  "stesen": [
   {
    "nama": "Seri Manjung",
    "id": "CA13A",
-   "ipu": 95,
+   "ipu": 96,
    "kategori": "Sederhana",
    "pencemar": "PM2.5"
   },
@@ -19,7 +19,7 @@
   {
    "nama": "Tanjung Malim",
    "id": "CA14A",
-   "ipu": 80,
+   "ipu": 79,
    "kategori": "Sederhana",
    "pencemar": "PM2.5"
   },
