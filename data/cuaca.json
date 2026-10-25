@@ -1,18 +1,7 @@
 {
- "dikemaskini": "2026-10-25T23:49:52+08:00",
+ "dikemaskini": "2026-10-26T00:50:46+08:00",
  "sumber": "MET Malaysia melalui data.gov.my",
  "ramalan": [
-  {
-   "tarikh": "2026-10-25",
-   "hari": "Ahad",
-   "ringkasan": "Hujan",
-   "ringkasan_bila": "Sepanjang hari",
-   "pagi": "Hujan",
-   "petang": "Hujan",
-   "malam": "Hujan",
-   "suhu_min": 21,
-   "suhu_maks": 30
-  },
   {
    "tarikh": "2026-10-26",
    "hari": "Isnin",
