@@ -1,18 +1,11 @@
 {
- "dikemaskini": "2026-10-31T12:00:00+08:00",
+ "dikemaskini": "2026-10-31T13:00:00+08:00",
  "sumber": "APIMS, Jabatan Alam Sekitar",
  "stesen": [
   {
    "nama": "Tasek Ipoh",
    "id": "CA11A",
-   "ipu": 65,
-   "kategori": "Sederhana",
-   "pencemar": "PM2.5"
-  },
-  {
-   "nama": "Pegoh Ipoh",
-   "id": "CA12A",
-   "ipu": 55,
+   "ipu": 63,
    "kategori": "Sederhana",
    "pencemar": "PM2.5"
   },
@@ -20,6 +13,13 @@
    "nama": "Seri Manjung",
    "id": "CA13A",
    "ipu": 55,
+   "kategori": "Sederhana",
+   "pencemar": "PM2.5"
+  },
+  {
+   "nama": "Pegoh Ipoh",
+   "id": "CA12A",
+   "ipu": 54,
    "kategori": "Sederhana",
    "pencemar": "PM2.5"
   },
