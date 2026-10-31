@@ -1,5 +1,5 @@
 {
- "dikemaskini": "2026-10-31T10:00:00+08:00",
+ "dikemaskini": "2026-10-31T11:00:00+08:00",
  "sumber": "APIMS, Jabatan Alam Sekitar",
  "stesen": [
   {
@@ -12,7 +12,7 @@
   {
    "nama": "Pegoh Ipoh",
    "id": "CA12A",
-   "ipu": 58,
+   "ipu": 57,
    "kategori": "Sederhana",
    "pencemar": "PM2.5"
   },
@@ -33,7 +33,7 @@
   {
    "nama": "Tanjung Malim",
    "id": "CA14A",
-   "ipu": 30,
+   "ipu": 29,
    "kategori": "Baik",
    "pencemar": "PM2.5"
   }
