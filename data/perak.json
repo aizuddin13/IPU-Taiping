@@ -1,5 +1,5 @@
 {
- "dikemaskini": "2026-10-31T23:00:00+08:00",
+ "dikemaskini": "2026-11-01T00:00:00+08:00",
  "sumber": "APIMS, Jabatan Alam Sekitar",
  "stesen": [
   {
@@ -33,7 +33,7 @@
   {
    "nama": "Tanjung Malim",
    "id": "CA14A",
-   "ipu": 44,
+   "ipu": 45,
    "kategori": "Baik",
    "pencemar": "PM2.5"
   }
