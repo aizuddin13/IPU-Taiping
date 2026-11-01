@@ -1,5 +1,5 @@
 {
- "dikemaskini": "2026-11-01T13:07:55+08:00",
+ "dikemaskini": "2026-11-01T13:59:55+08:00",
  "sumber": "MET Malaysia melalui data.gov.my",
  "ramalan": [
   {
@@ -16,20 +16,20 @@
   {
    "tarikh": "2026-11-02",
    "hari": "Isnin",
-   "ringkasan": "Ribut petir",
-   "ringkasan_bila": "Pagi",
-   "pagi": "Ribut petir",
+   "ringkasan": "Hujan",
+   "ringkasan_bila": "Malam",
+   "pagi": "Tiada hujan",
    "petang": "Tiada hujan",
-   "malam": "Tiada hujan",
+   "malam": "Hujan",
    "suhu_min": 24,
    "suhu_maks": 34
   },
   {
    "tarikh": "2026-11-03",
    "hari": "Selasa",
-   "ringkasan": "Ribut petir",
-   "ringkasan_bila": "Pagi",
-   "pagi": "Ribut petir",
+   "ringkasan": "Tiada hujan",
+   "ringkasan_bila": "Sepanjang hari",
+   "pagi": "Tiada hujan",
    "petang": "Tiada hujan",
    "malam": "Tiada hujan",
    "suhu_min": 24,
@@ -38,9 +38,9 @@
   {
    "tarikh": "2026-11-04",
    "hari": "Rabu",
-   "ringkasan": "Ribut petir",
-   "ringkasan_bila": "Pagi",
-   "pagi": "Ribut petir",
+   "ringkasan": "Tiada hujan",
+   "ringkasan_bila": "Sepanjang hari",
+   "pagi": "Tiada hujan",
    "petang": "Tiada hujan",
    "malam": "Tiada hujan",
    "suhu_min": 24,
