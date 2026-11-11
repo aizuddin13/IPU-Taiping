@@ -1,18 +1,7 @@
 {
- "dikemaskini": "2026-11-11T15:48:24+08:00",
+ "dikemaskini": "2026-11-12T00:18:22+08:00",
  "sumber": "MET Malaysia melalui data.gov.my",
  "ramalan": [
-  {
-   "tarikh": "2026-11-11",
-   "hari": "Rabu",
-   "ringkasan": "Hujan",
-   "ringkasan_bila": "Malam",
-   "pagi": "Tiada hujan",
-   "petang": "Tiada hujan",
-   "malam": "Hujan",
-   "suhu_min": 23,
-   "suhu_maks": 33
-  },
   {
    "tarikh": "2026-11-12",
    "hari": "Khamis",
