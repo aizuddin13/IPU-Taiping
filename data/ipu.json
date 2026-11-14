@@ -2,58 +2,10 @@
  "stesen": "Taiping",
  "id_stesen": "CA10A",
  "negeri": "Perak",
- "dikemaskini": "2026-11-14T14:00:00+08:00",
+ "dikemaskini": "2026-11-14T22:00:00+08:00",
  "sumber": "APIMS, Jabatan Alam Sekitar",
  "tetingkap_dicuba": [],
  "bacaan": [
-  {
-   "masa": "2026-11-07T15:00:00",
-   "ipu": 47,
-   "kategori": "Baik",
-   "pencemar": "PM2.5"
-  },
-  {
-   "masa": "2026-11-07T16:00:00",
-   "ipu": 49,
-   "kategori": "Baik",
-   "pencemar": "PM2.5"
-  },
-  {
-   "masa": "2026-11-07T17:00:00",
-   "ipu": 48,
-   "kategori": "Baik",
-   "pencemar": "PM2.5"
-  },
-  {
-   "masa": "2026-11-07T18:00:00",
-   "ipu": 48,
-   "kategori": "Baik",
-   "pencemar": "PM2.5"
-  },
-  {
-   "masa": "2026-11-07T19:00:00",
-   "ipu": 47,
-   "kategori": "Baik",
-   "pencemar": "PM2.5"
-  },
-  {
-   "masa": "2026-11-07T20:00:00",
-   "ipu": 46,
-   "kategori": "Baik",
-   "pencemar": "PM2.5"
-  },
-  {
-   "masa": "2026-11-07T21:00:00",
-   "ipu": 45,
-   "kategori": "Baik",
-   "pencemar": "PM2.5"
-  },
-  {
-   "masa": "2026-11-07T22:00:00",
-   "ipu": 44,
-   "kategori": "Baik",
-   "pencemar": "PM2.5"
-  },
   {
    "masa": "2026-11-07T23:00:00",
    "ipu": 44,
@@ -1011,6 +963,54 @@
   {
    "masa": "2026-11-14T14:00:00",
    "ipu": 41,
+   "kategori": "Baik",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-11-14T15:00:00",
+   "ipu": 41,
+   "kategori": "Baik",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-11-14T16:00:00",
+   "ipu": 40,
+   "kategori": "Baik",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-11-14T17:00:00",
+   "ipu": 39,
+   "kategori": "Baik",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-11-14T18:00:00",
+   "ipu": 38,
+   "kategori": "Baik",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-11-14T19:00:00",
+   "ipu": 37,
+   "kategori": "Baik",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-11-14T20:00:00",
+   "ipu": 36,
+   "kategori": "Baik",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-11-14T21:00:00",
+   "ipu": 36,
+   "kategori": "Baik",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-11-14T22:00:00",
+   "ipu": 36,
    "kategori": "Baik",
    "pencemar": "PM2.5"
   }
