@@ -2,46 +2,10 @@
  "stesen": "Taiping",
  "id_stesen": "CA10A",
  "negeri": "Perak",
- "dikemaskini": "2026-11-17T06:00:00+08:00",
+ "dikemaskini": "2026-11-17T12:00:00+08:00",
  "sumber": "APIMS, Jabatan Alam Sekitar",
  "tetingkap_dicuba": [],
  "bacaan": [
-  {
-   "masa": "2026-11-10T07:00:00",
-   "ipu": 32,
-   "kategori": "Baik",
-   "pencemar": "PM2.5"
-  },
-  {
-   "masa": "2026-11-10T08:00:00",
-   "ipu": 32,
-   "kategori": "Baik",
-   "pencemar": "PM2.5"
-  },
-  {
-   "masa": "2026-11-10T09:00:00",
-   "ipu": 32,
-   "kategori": "Baik",
-   "pencemar": "PM2.5"
-  },
-  {
-   "masa": "2026-11-10T10:00:00",
-   "ipu": 31,
-   "kategori": "Baik",
-   "pencemar": "PM2.5"
-  },
-  {
-   "masa": "2026-11-10T11:00:00",
-   "ipu": 31,
-   "kategori": "Baik",
-   "pencemar": "PM2.5"
-  },
-  {
-   "masa": "2026-11-10T12:00:00",
-   "ipu": 32,
-   "kategori": "Baik",
-   "pencemar": "PM2.5"
-  },
   {
    "masa": "2026-11-10T13:00:00",
    "ipu": 33,
@@ -1011,6 +975,42 @@
   {
    "masa": "2026-11-17T06:00:00",
    "ipu": 33,
+   "kategori": "Baik",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-11-17T07:00:00",
+   "ipu": 32,
+   "kategori": "Baik",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-11-17T08:00:00",
+   "ipu": 33,
+   "kategori": "Baik",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-11-17T09:00:00",
+   "ipu": 34,
+   "kategori": "Baik",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-11-17T10:00:00",
+   "ipu": 34,
+   "kategori": "Baik",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-11-17T11:00:00",
+   "ipu": 36,
+   "kategori": "Baik",
+   "pencemar": "PM2.5"
+  },
+  {
+   "masa": "2026-11-17T12:00:00",
+   "ipu": 37,
    "kategori": "Baik",
    "pencemar": "PM2.5"
   }
